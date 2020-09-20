@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息</title>
+</head>
+<body>
+    <h1>学生信息列表</h1>
+    <ul>
+        <!--学生列表-->
+        {%for student in students%}
+        <li>
+            姓名： {{student.sname}}<br>
+            性别： {{student.sgender}}<br>
+            年龄： {{student.sage}}<br>
+            描述： {{student.scontend}}<br>
+        </li>
+        {%endfor%}
+    </ul>>
+
+</body>
+</html>

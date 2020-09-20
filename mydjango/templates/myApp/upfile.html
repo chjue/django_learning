@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件</title>
+</head>
+<body>
+<!--注意:from表单上传文件要加enctype="multipart/form-data"属性-->
+    <form method="post" action="/savefile" enctype="multipart/form-data">
+        {%csrf_token%}
+        <input type="file" name="file">
+        <input type="submit" name="上传">
+    </form>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

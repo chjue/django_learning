@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息</title>
+</head>
+<body>
+    <h1>学生信息列表</h1>
+    <ul>
+        <!--学生列表-->
+        {%for student in students%}
+            {% if forloop.counter|divisibleby:2 %}
+                <li style="color:red">
+                    <a href="{{student.id}}" style="color:red">第{{forloop.counter}}个学生：{{student.sname}}</a>-->
+                </li>>
+            {%else%}
+                <li style="color:green">
+                    <a href="{{student.id}}" style="color:green">第{{forloop.counter}}个学生：{{student.sname}}</a>-->
+                </li>>
+            {%endif%}
+<!--        <li>-->
+<!--            <a href="{{student.id}}">第{{forloop.counter}}个学生：{{student.sname}}</a>-->
+<!--        </li>-->
+            {%empty%}
+                <h1>目前没有学生</h1>>
+        {%endfor%}
+
+        {%comment%}
+            注释的内容:作用注释多行
+        {%endcomment%}
+
+        {%ifequal 1 1 %}
+            语句:如果值1和值2相等则执行这个
+        {%endifequal%}
+
+        <h1>{{hahayou|upper}}</h1>>
+        <h1>{{list|join:'#'}}</h1>>
+        <h1>{{test|default:'没有'}}</h1>>
+
+        <h1>传过来的数字是num={{num}}</h1>
+        <h1>加法+10：num={{num|add:10}}</h1>
+        <h1>减法-10：num={{num|add:-5}}</h1>
+        <!--        num除1乘5-->
+        <h1>乘法x5：num={% widthratio num 1 5%}</h1>
+        <h1>除法/5：num={% widthratio num 5 1%}</h1><br>
+
+        <h2>显示没有html转义：{{code|escape}}</h2>>
+        <h2>显示有html转义：{{code|safe}}</h2>>
+        {% autoescape off %}
+            <h2>显示html转义：{{code}}</h2>>
+        {% endautoescape %}
+
+    </ul>>
+
+</body>
+</html>

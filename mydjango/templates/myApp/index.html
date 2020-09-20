@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页面</title>
+<!--    测试调用静态的css-->
+    <link type="text/css" href="/static/myApp/css/style.css">
+<!--    测试调用静态的js-->
+<!--    <script type="text/javascript" src="/static/myApp/js/sunck.js">-->
+</head>
+<body>
+    <h1>主页面信息</h1>
+    <ul>
+        <!--p -->
+        <li>
+            <a href="/grades">grades</a><br>
+            <a href="/students">students</a><br>
+            <a href="/showregist">regist</a><br>
+            <!--<%url'namespace:name' p1 p2%>-->
+            <a href="{% url 'myApp:good' 8%}" >反向解析链接</a><br>
+<!--            <a href="/good" >反向解析链接</a><br>-->
+
+            <!--测试调用静态文件image-->
+            <img src="/static/myApp/image/tree.jpg">
+        </li>
+    </ul>>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

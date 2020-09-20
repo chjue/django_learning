@@ -1,0 +1,38 @@
+<!--从setting里加载static标签,就是STATIC_URL的值,下面会使用-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+<!--    引用外部css文件-->
+    <link rel="stylesheet" type="text/css" href="/static/myApp/css/style.css">
+<!--    引用外部js文件-->
+<!--    <script type="text/javascript" src="/static/myApp/js/jquery-3.1.1.1.min.js"></script>-->
+    <script type="text/javascript" src="/static/myApp/js/sunck.js"></script>
+
+</head>
+<body>
+    <h1>欢迎：{{username}}</h1>
+    <!--    引用外部图片-->
+    <img src="/static/myApp/image/tree.jpg"/><!--    写死的-->
+    <img src="{% static 'myApp/image/tree.jpg' %}"/><!--    使用第一行引入的标签加载的-->
+    <a href="login">登录</a>><br>
+    <a href="quit">退出登录</a>>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
