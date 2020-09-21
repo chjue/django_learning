@@ -5,8 +5,14 @@
     <title>注册</title>
 </head>
 <body>
-    <form action="regist/" method="post">
-        姓名:<input type="text" name="name" value=""/>
+    此人信息如下：<br><br>
+    姓名： {{student.sname}}<br>
+    性别： {{student.sgender}}<br>
+    年龄： {{student.sage}}<br>
+    描述： {{student.scontend}}<br><br>
+
+    <form action="toModifyStudent/" method="post">
+        姓名:<input type="text" name="age" value=""/>
         <hr/>
         性别:<input type="radio" name="gender" value="1"/>男
              <input type="radio" name="gender" value="0"/>女
@@ -20,7 +26,7 @@
              <input type="checkbox" name="hobby" value="boy"/>男人
              <input type="checkbox" name="hobby" value="girl"/>女人
         <hr/>
-        <input type="submit" value="注册">
+        <input type="submit" value="提交">
 
     </form>
 

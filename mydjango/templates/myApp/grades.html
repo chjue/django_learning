@@ -9,11 +9,12 @@
     <ul>
         <!--python04,05,06-->
         {%for grade in grades%}
-        <li>
-            <a href="{{grade.id}}">{{grade.gname}}</a>
-        </li>
+            <li>
+                <a href="{{grade.id}}/">{{grade.gname}}</a>
+<!--                地址中有/这里再加/就是追加， 若没有/就是替换-->
+            </li>
         {%endfor%}
-    </ul>>
+    </ul>
 
 </body>
 </html>

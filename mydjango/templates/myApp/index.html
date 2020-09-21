@@ -15,9 +15,14 @@
         <li>
             <a href="/grades">grades</a><br>
             <a href="/students">students</a><br>
-            <a href="/showregist">regist</a><br>
+<!--            <a href="/showregist">regist</a><br>-->
+            <a href="{% url 'myApp:showregist' %}">注册学学生信息</a><br>
+            <a href="/deleteStudent/">删除学生</a><br>
+            <a href="/modifyStudent/">修改学生信息</a><br>
+            <a href="{% url 'myApp:showregistforgrade' %}">注册班级信息</a><br>
             <!--<%url'namespace:name' p1 p2%>-->
             <a href="{% url 'myApp:good' 8%}" >反向解析链接</a><br>
+            <a href="/upfile">上传附件</a><br>
 <!--            <a href="/good" >反向解析链接</a><br>-->
 
             <!--测试调用静态文件image-->

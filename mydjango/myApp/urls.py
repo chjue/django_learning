@@ -7,10 +7,16 @@ urlpatterns=[
     url(r'^grades/$', views.grades),
     url(r'^grades2/$', views.grades2),
     url(r'^students/$', views.students),
-    url(r'^grades/(\d+)/$', views.gradesStudents),#(\d+)是任意数字，可以当做参数传递给views的gradesStudents方法
-    url(r'^grades/(\d+)/(\d+)/$', views.detailStudent),
-    url(r'^students/(\d+)/$', views.detailStudent2),
+    url(r'^grades/(\d+)$', views.gradesStudents),#(\d+)是任意数字，可以当做参数传递给views的gradesStudents方法
+    url(r'^grades/(\d+)/$', views.gradesStudents),  # (\d+)是任意数字，可以当做参数传递给views的gradesStudents方法
+    url(r'^grades/(\d+)/(\d+)$', views.detailStudent),
+    url(r'^students/(\d+)$', views.detailStudent2),
     url(r'^addstudent/$', views.addstudent),
+    url(r'^deleteStudent/$', views.deletestudent),
+    url(r'^modifyStudent/$', views.modifystudent),
+    url(r'^modifyStudent/modifyStudentInfo$', views.modifyStudentInfo),
+    url(r'^modifyStudent/toModifyStudent/$', views.toModifyStudent),
+    url(r'^deleteStudent/deleteStudentInfo$', views.deletestudentInfo),
     url(r'^addstudent2/$', views.addstudent2),
     url(r'^students2/$', views.students2),
     url(r'^students3/$', views.students3),
@@ -19,8 +25,11 @@ urlpatterns=[
     url(r'^attribute/$', views.attribute),
     url(r'^get1/$', views.get1), #获取get传递的参数,网址访问：http://127.0.0.1:8000/get1?a=1&b=2&c=3
     url(r'^get2/$', views.get2), #一个键带多个值，网址访问：http://127.0.0.1:8000/get2?a=1&a=2&c=3
-    url(r'^showregist/$', views.showregist),#显示注册界面
+    url(r'^showregist$', views.showregist,name="showregist"),#显示注册界面
+    url(r'^showregistforgrade$', views.showregistforgrade, name="showregistforgrade"),  # 显示注册界面
     url(r'^showregist/regist/$', views.regist),  # 注册界面
+    url(r'^regist/$', views.regist),  # 注册界面
+    url(r'^registgrade/$', views.registgrade),  # 注册界面
     url(r'^showresponse/$', views.showresponse),  # 注册界面
     url(r'^cookieset/$', views.cookieset),  # 注册界面
     url(r'^rediret1/$', views.rediret1),  # 注册界面
@@ -31,7 +40,7 @@ urlpatterns=[
     url(r'^main/quit/$', views.quit),
     url(r'^good(\d+)/$', views.good,name="good"),
     url(r'^mainbase/$', views.mainbase),
-    url(r'^upfile/$', views.upfile),
+    url(r'^upfile', views.upfile),
     url(r'^savefile$', views.savefile),
 
 ]

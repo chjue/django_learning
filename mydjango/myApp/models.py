@@ -15,11 +15,24 @@ class Grades(models.Model):
         db_table="grades"
         ordering=['id']
 
+    #定义一个类方法创建对象,相当于构造方法
+    # cls相当于self指的是Grades类
+    @classmethod
+    def createGrade(cls,gname,gdate,ggirlnum,gboynum,isDelete=False):
+        gra=cls(gname=gname,gdate=gdate,ggirlnum=ggirlnum,gboynum=gboynum,isDelete=isDelete)
+        return gra
+
+
+
 
 # 自定义模型管理器Manager类
 class StudentsManager(models.Manager):
     def get_queryset(self):#返回过滤后的查询结果集
         return super(StudentsManager,self).get_queryset().filter(isDelete=False)
+
+    def get_queryset2(self,id):#返回过滤后的查询结果集
+        return super(StudentsManager,self).get_queryset().filter(id=id)
+
     def createStudent(self,name,age,gender,contend,grade,lastT,createT,isD=False):#此方法在view中addstudent2使用
         stu=self.model()
         stu.sname=name
@@ -29,6 +42,10 @@ class StudentsManager(models.Manager):
         stu.createTime=createT
         stu.sgrade=grade
         return stu
+
+
+
+
 
 # 对应数据库中的 students 表
 class Students(models.Model):
@@ -55,8 +72,6 @@ class Students(models.Model):
     def createStudent(cls,name,age,gender,contend,grade,lastT,createT,isD=False):
         stu=cls(sname=name,sage=age,sgender=gender,scontend=contend,sgrade=grade,lastTime=lastT,createTime=createT,isDelete=isD)
         return stu
-
-
 
 
 

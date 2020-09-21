@@ -81,7 +81,11 @@ def stupage(request,page):
 def gradesStudents(request,num): # 点击班级现实班级中的所有学生
     grade = Grades.objects.get(pk=num)
     studentsList = grade.students_set.all()
-    return render(request, 'myApp/students.html', {"students": studentsList})  # grades是grades.html中的变量
+    studentsListNew=[]
+    for student in studentsList:
+        if student.isDelete==False:
+            studentsListNew.append(student)
+    return render(request, 'myApp/students.html', {"students": studentsListNew})  # grades是grades.html中的变量
 
 def detailStudent(request,num,num2): # 点击班级现实班级中的所有学生
     student = Students.stuObj2.get(pk=num2)
@@ -101,6 +105,48 @@ def detailStudent2(request,num): # 点击班级现实班级中的所有学生
 def addstudent(request): # 点击班级现实班级中的所有学生
     grade = Grades.objects.get(pk=1)
     stu = Students.createStudent("刘德华",34,True,"wojia",grade,"2017-8-10","2017-8-11")
+    stu.save()
+    return HttpResponse("successful")
+
+
+def deletestudent(request): # 删除学生
+
+    return render(request, 'myApp/deletestudent.html')
+
+def deletestudentInfo(request): # 删除学生
+    id=request.POST.get("id")
+    student = Students.stuObj2.get(pk=id)
+    student.isDelete=True
+    student.save()
+    return HttpResponse("successful")
+
+
+def modifystudent(request): # 修改学生信息
+
+    return render(request, 'myApp/modifystudent.html')
+
+def modifyStudentInfo(request): # 修改学生信息
+    id=request.POST.get("id")
+    stu = Students.stuObj2.get(pk=id)
+    # stuList=Students.stuObj2.get_queryset()
+    # for stu in stuList:
+    #     if stu.
+    return render(request, 'myApp/modifystudentInfo.html',{"student": stu})
+
+
+def toModifyStudent(request): # 修改学生信息
+    id=request.POST.get("id")
+    # name=request.POST.get('name')
+    gender = request.POST.get('gender')
+    age = request.POST.get('age')
+    gradeid = request.POST.get('grade')
+    hobby = request.POST.getlist('hobby')
+    stu = Students.stuObj2.get(pk=id)
+    # stu.sname=name
+    stu.sgender=gender
+    stu.sage=age
+    stu.scontend=hobby
+    stu.sgrade=gradeid
     stu.save()
     return HttpResponse("successful")
 
@@ -140,6 +186,11 @@ def get2(request): #
 def showregist(request): #
     return render(request, 'myApp/regist.html')
 
+#POST
+def showregistforgrade(request): #
+    return render(request, 'myApp/registgrade.html')
+
+
 
 
 def regist(request): #
@@ -147,8 +198,25 @@ def regist(request): #
     name=request.POST.get('name')
     gender = request.POST.get('gender')
     age = request.POST.get('age')
+    gradeid = request.POST.get('grade')
     hobby = request.POST.getlist('hobby')
+
+    grade = Grades.objects.get(pk=gradeid)
+    stu = Students.createStudent(name,age,gender,"I like "+hobby[0],grade,"2017-8-10","2017-8-11")
+    stu.save()
+
     return HttpResponse(name+gender+age+hobby[0])
+
+def registgrade(request): #
+    #表单元素中的name属性的值就是键值
+    name=request.POST.get('name')
+    mannumber = request.POST.get('mannumber')
+    girlnumber = request.POST.get('girlnumber')
+    date=request.POST.get('date')
+
+    gra = Grades.createGrade(name,date,mannumber,girlnumber)
+    gra.save()
+    return HttpResponse(name+mannumber+girlnumber)
 
 
 
@@ -244,6 +312,7 @@ def savefile(request):
             for info in f.chunks():
                 fp.write(info)
         return HttpResponse("上传成功")
+        # return redirect("/showregist",{"upfileresut":"sucess"} )
     else:
         return HttpResponse("请求方法不对，上传失败")
 
