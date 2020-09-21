@@ -42,6 +42,7 @@ urlpatterns=[
     url(r'^mainbase/$', views.mainbase),
     url(r'^upfile', views.upfile),
     url(r'^savefile$', views.savefile),
+    url(r'^studentpage/(\d+)$', views.studentpage),#学生分页
 
 ]
 

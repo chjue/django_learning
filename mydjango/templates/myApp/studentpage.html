@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息</title>
+</head>
+<body>
+    <h1>学生信息列表分页展示</h1>
+    <ul>
+        <!--学生列表-->
+        {% for stu in students %}
+
+                <li style="color:red">
+                    {{stu.sname}}---{{stu.sgrade}}
+                </li>
+
+        {%endfor%}
+
+    </ul>
+
+    <ul>
+        {% for index in students.paginator.page_range %}
+<!--                等号两边的空格不能去，否则会报错-->
+                {% if index == students.number %}
+                    <li>
+                        {{index}}
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="/studentpage/{{index}}">{{index}}</a>
+                    </li>
+                {% endif %}
+
+
+        {%endfor%}
+    </ul>>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

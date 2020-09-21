@@ -2,7 +2,9 @@ import os
 
 from django.conf import settings
 from django.contrib.auth import logout
+from django.core import paginator
 from django.core.exceptions import MultipleObjectsReturned
+from django.core.paginator import Paginator
 from django.db.models import F
 from django.shortcuts import render, redirect
 
@@ -319,7 +321,13 @@ def savefile(request):
 
 
 
-
+# 实现学生分页
+def studentpage(request,pageid):
+    # 所有学生的列表
+    allList=Students.stuObj2.all()
+    paginator=Paginator(allList,3)#每页3个
+    page=paginator.page(pageid)
+    return render(request,"myApp/studentpage.html",{"students":page})
 
 
 

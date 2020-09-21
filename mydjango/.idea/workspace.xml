@@ -20,17 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7f9aff2-2831-4b96-80d0-8ca6c1ddb0d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mydjango.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mydjango.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/grades.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/grades.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/myApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/regist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chenhaijiao\PycharmProjects\django_learning\mydjango\templates\myApp" />
       <recent name="C:\Users\QXZ0X6X\PycharmProjects\django_learning\mydjango\templates\myApp" />
       <recent name="C:\Users\chenhaijiao\PycharmProjects\django_project\mydjango\static\myApp\image" />
       <recent name="C:\Users\chenhaijiao\PycharmProjects\django_project\mydjango\templates\myApp" />
@@ -162,12 +159,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1600513406053">
@@ -186,9 +184,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600513406053" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1600654316268">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="213" y="0" key="SettingsEditor" timestamp="1600690105406">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600654316268" />
+    <state x="213" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600690105406" />
   </component>
 </project>
