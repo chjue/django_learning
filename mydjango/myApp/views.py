@@ -329,6 +329,24 @@ def studentpage(request,pageid):
     page=paginator.page(pageid)
     return render(request,"myApp/studentpage.html",{"students":page})
 
+# ajax学习
+def ajaxStudent(request):
+    return render(request,"myApp/ajaxStudents.html")
+
+
+# ajax学习
+from django.http import JsonResponse
+def studentsinfo(request):
+    stus=Students.stuObj2.all()
+    list=[]
+    for stu in stus:
+        list.append([stu.sname,stu.sage])
+
+    return JsonResponse({"data":list})
+
+
+
+
 
 
 

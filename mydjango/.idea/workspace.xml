@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7f9aff2-2831-4b96-80d0-8ca6c1ddb0d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mydjango.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mydjango.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myApp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +50,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/myApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/myApp/js" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chenhaijiao\PycharmProjects\django_learning\mydjango\static\myApp\js" />
       <recent name="C:\Users\chenhaijiao\PycharmProjects\django_learning\mydjango\templates\myApp" />
       <recent name="C:\Users\QXZ0X6X\PycharmProjects\django_learning\mydjango\templates\myApp" />
       <recent name="C:\Users\chenhaijiao\PycharmProjects\django_project\mydjango\static\myApp\image" />
@@ -189,5 +186,9 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600654316268" />
     <state x="213" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600690105406" />
+    <state x="722" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1600774947055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600774947055" />
   </component>
 </project>

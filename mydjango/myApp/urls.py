@@ -43,6 +43,8 @@ urlpatterns=[
     url(r'^upfile', views.upfile),
     url(r'^savefile$', views.savefile),
     url(r'^studentpage/(\d+)$', views.studentpage),#学生分页
+    url(r'^ajaxStudent/$', views.ajaxStudent),  # ajax使用
+    url(r'^studentsinfo/$', views.studentsinfo),  # ajax使用
 
 ]
 
