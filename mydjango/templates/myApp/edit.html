@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的富文本</title>
+<!--    不用管有没有/static/tiny_mce/tiny_mce.js这个js，会自动创建-->
+    <script type="text/javascript" src="/static/tiny_mce/tiny_mce.js"></script>
+    <!--            把textareas标签变成富文本-->
+    <script type="text/javascript">
+        tinyMCE.init({
+            'mode':'textareas',
+            'theme':'advanced',
+            'width':800,
+            'height':600
+        }
+        )
+    </script>
+</head>
+<body>
+    <h1>我的富文本页面</h1>
+    <form action="/saveedit/" method="post">
+        <textarea name="str">sunck is a good man</textarea>
+        <input type="submit" value="提交"></form>
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

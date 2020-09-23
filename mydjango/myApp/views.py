@@ -1,4 +1,5 @@
 import os
+import time
 
 from django.conf import settings
 from django.contrib.auth import logout
@@ -346,6 +347,21 @@ def studentsinfo(request):
 
 
 
+
+
+
+
+# 实现富文本
+def edit(request):
+
+    return render(request,"myApp/edit.html")
+
+# 实现celery
+def celery(request):
+    # 把下面的耗时操作挪到task里面去
+    # print("sucnk is a good man")
+    # time.sleep(10) #模拟耗时操作，十秒钟后才能返回页面
+    return render(request,"myApp/celery.html")
 
 
 

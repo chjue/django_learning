@@ -3,6 +3,9 @@ from django.db import models
 # Create your models here.
 
 # 对应数据库中的 grades 表
+from tinymce.models import HTMLField
+
+
 class Grades(models.Model):
     gname = models.CharField(max_length=20) # 对应表里字段
     gdate = models.DateTimeField()
@@ -73,8 +76,9 @@ class Students(models.Model):
         stu=cls(sname=name,sage=age,sgender=gender,scontend=contend,sgrade=grade,lastTime=lastT,createTime=createT,isDelete=isD)
         return stu
 
-
-
+#富文本模型类
+class Text(models.Model):
+    str = HTMLField()
 
 
 

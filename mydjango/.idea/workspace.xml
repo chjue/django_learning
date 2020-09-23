@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c7f9aff2-2831-4b96-80d0-8ca6c1ddb0d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myApp/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydjango/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydjango/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydjango/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -50,13 +55,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/myApp/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/myApp" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chenhaijiao\PycharmProjects\django_learning\mydjango\static\myApp\js" />
       <recent name="C:\Users\chenhaijiao\PycharmProjects\django_learning\mydjango\templates\myApp" />
+      <recent name="C:\Users\chenhaijiao\PycharmProjects\django_learning\mydjango\static\myApp\js" />
       <recent name="C:\Users\QXZ0X6X\PycharmProjects\django_learning\mydjango\templates\myApp" />
       <recent name="C:\Users\chenhaijiao\PycharmProjects\django_project\mydjango\static\myApp\image" />
       <recent name="C:\Users\chenhaijiao\PycharmProjects\django_project\mydjango\templates\myApp" />

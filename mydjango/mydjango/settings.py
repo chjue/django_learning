@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myApp'
+    'myApp',
+    'tinymce',
+    'djcelery'
 ]
 
 MIDDLEWARE = [
@@ -139,3 +141,34 @@ MEDIA_ROOT=os.path.join(BASE_DIR,r'static\upfile')
 # SESSION_REDIS_DB=0
 # SESSION_REDIS_PASSWORD='sunck'
 # SESSION_REDIS_PREFIX='session'
+
+
+# 富文本配置文件
+TINYMCE_DEFAULT_CONFIG = {
+    'theme':'advanced',
+    'width':600,
+    'heigh':400,
+}
+
+
+#celery配置
+import djcelery
+djcelery.setup_loader()#初始化
+BROKER_URL='redis://:sunck@127.0.0.1:6379/0'
+CELERY_IMPORTS=('myApp.task') #项目的task文件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

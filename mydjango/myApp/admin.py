@@ -52,6 +52,9 @@ class StudentsAdmin(admin.ModelAdmin):
 # admin.site.register(Students,StudentsAdmin)
 
 
+from .models import Text
+admin.site.register(Text)
+# 站点的用户名是 sunck1/654321
 
 
 

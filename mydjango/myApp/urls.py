@@ -45,6 +45,8 @@ urlpatterns=[
     url(r'^studentpage/(\d+)$', views.studentpage),#学生分页
     url(r'^ajaxStudent/$', views.ajaxStudent),  # ajax使用
     url(r'^studentsinfo/$', views.studentsinfo),  # ajax使用
+    url(r'^edit/$', views.edit),  # 富文本使用
+    url(r'^celery/$', views.celery),  # celery使用
 
 ]
 
